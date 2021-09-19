@@ -1,0 +1,323 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 70%;
+    max-width: 1050px;
+}
+
+/* --- NAVIGATION BAR SECTION --- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 0;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-list-item {
+    display: inline-block;
+}
+
+.navbar-list-item a {
+    text-decoration: none;
+    color: #575657;
+    margin: 0 8px;
+}
+
+.navbar-list-item a.subscribe-button {
+    padding: 16px;
+    color: #070707;
+    font-weight: 700;
+    background-color: #ee7c0d;
+    border-radius: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+/* --- HERO SECTION --- */
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+}
+
+.hero-img-section {
+    flex: 1;
+}
+
+.hero-content-section {
+    flex: 2;
+    margin-left: 56px;
+}
+
+.hero-img {
+    max-width: 100%;
+    min-width: 331.328px;
+}
+
+.hero-header {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.25;
+    color: #070707;
+}
+
+.hero-text {
+    line-height: 1.25;
+    color: #575657;
+    margin: 16px 0;
+}
+
+.hero-person {
+    display: flex;
+    align-items: center;
+}
+
+.hero-avatar-img {
+    max-width: 56px;
+}
+
+.hero-avatar-info {
+    font-size: 12px;
+    line-height: 1.25;
+    margin: 16px;
+}
+
+.hero-avatar-name {
+    color: #070707;
+    font-weight: 700;
+}
+
+.hero-avatar-des {
+    color: #575657;
+}
+
+/* --- OTHER ARTICLES SECTION --- */
+
+.other-section {
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.other-article {
+    flex: 1;
+    margin-right: 24px;
+}
+
+.other-article:last-child {
+    margin-right: 0;
+}
+
+.other-article-img {
+    max-width: 100%;
+}
+
+.other-article-header {
+    color: #070707;
+    margin: 16px 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.25;
+}
+
+.other-article-text {
+    color: #575657;
+    line-height: 1.25;
+}
+
+.other-person {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.avatar-img {
+    max-width: 56px;
+}
+
+.avatar-info {
+    font-size: 12px;
+    line-height: 1.25;
+    margin: 16px;
+}
+
+.avatar-name {
+    color: #070707;
+    font-weight: 700;
+}
+
+.avatar-des {
+    color: #575657;
+}
+
+
+/* --- FOOTER SECTION --- */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright-section {
+    display: flex;
+    align-items: center;
+}
+
+.copyright-text {
+    color: #575657;
+    font-size: 12px;
+}
+
+@media (max-width: 1240px) {
+    .content {
+        width: 70%;
+    }
+
+    /* --- HERO SECTION --- */
+
+    .hero-section {
+        flex-flow: column;
+        padding: 32px 0 16px;
+    }
+
+    .hero-img-section {
+        flex: 1 200px;
+        overflow: hidden;
+    }
+
+    .hero-content-section {
+        flex: 1;
+        margin-left: 0;
+        margin-top: 16px;
+        width: 100%;
+    }
+
+    .hero-img {
+        margin-top: -160px;
+    }
+
+    /* --- OTHER ARTICLES SECTION --- */
+
+    .other-section {
+        flex-flow: column;
+    }
+
+    .other-article {
+        display: flex;
+        flex-flow: column;
+        padding: 16px 0;
+        margin: 0;
+    }
+
+    .other-img-section {
+        flex: 1 175px;
+        overflow: hidden;
+    }
+
+    .other-content-section {
+        flex: 1;
+    }
+
+    .other-article-img {
+        margin-top: -100px;
+    }
+  
+}
+
+@media (max-width: 775px) {
+    
+    .content {
+        width: 80%;
+    }
+    
+    /* --- NAVIGATION SECTION --- */
+
+    .navbar-list {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: inline-block;
+    } 
+
+    /* --- HERO SECTION --- */
+
+    .hero-img {
+        margin-top: -75px;
+    }
+
+    /* --- OTHER SECTION --- */
+
+    .other-article-img {
+        margin-top: -50px;
+    }
+} 
+
+
+
+/* Questions */
+/* 1 - Possible to resize website and make pic smaller and headers follow image? */
